@@ -1,0 +1,15 @@
+GET http://localhost:3001/api/user
+content-type: application/json 
+
+
+{
+  "data": [
+    {
+      "email": "ac@camariana.gm",
+      "firstname": "A",
+      "minit": "",
+      "lastname": "Camariana",
+      "role": "User",
+      "createdAt": "2022-10-15T07:06:03.201Z",
+      "updatedAt": "2022-10-15T07:06:03.201Z",
+      "id": "634a5bdb441c0826a1b5e678"
