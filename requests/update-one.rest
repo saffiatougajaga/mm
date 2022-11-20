@@ -1,0 +1,24 @@
+PUT http://localhost:3001/api/user/634a5bdb441c0826a1b5e678
+content-type: application/json
+
+
+{
+  "email": "saffiatougajaga@gmail.com",
+  "firstname": "saffie",
+  "minit": "",
+  "lastname": "gajaga",
+  "role": "Admin"
+}
+
+
+
+### knowledge
+PUT http://localhost:3001/api/knowledge/63773a79fcbfd67de6919422
+content-type: application/json
+{
+  "description": "user",
+  "content":"required",
+  "week": "seven",
+  "image": "view",
+  "userId": "636b76ea9daaabbcecf21442"
+}

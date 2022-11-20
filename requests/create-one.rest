@@ -2,9 +2,21 @@ POST http://localhost:3001/api/user HTTP/1.1
 content-type: application/json 
 
 {
-  "email": "saffiatougajaga@gmail.com",
+  "email": "saffieyaboe@gmail.com",
   "password": "secret",
   "firstname": "safie",
   "minit": "",
-  "lastname": "gajaga"
+  "lastname": "yaboe"
 }
+
+###
+POST http://localhost:3001/api/knowledge HTTP/1.1
+content-type: application/json 
+
+{
+"week":"seven",
+"title":"knowledge",
+"image":"screening",
+"user":"634a5bdb441c0826a1b5e678"
+}
+

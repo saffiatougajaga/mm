@@ -15,7 +15,7 @@ const createUser = async (req, res) => {
 
 // getting all the usere 
 
-const getAll = async(req , res , next) =>{
+const getAllUsers = async(req , res , next) =>{
 try {
   const user = await User.find();
   res.status(200).json({data: user})
@@ -25,7 +25,7 @@ try {
   
 }
 
-}
+};
 
 
 
@@ -85,7 +85,7 @@ data: user });
 
 module.exports = {
   createUser,
-  getAll,
+  getAllUsers,
   getOneUser,
   updateOne,
   deleteOne

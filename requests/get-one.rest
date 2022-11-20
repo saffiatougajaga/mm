@@ -1,0 +1,11 @@
+
+    GET http://localhost:3001/api/user/6378e04310758eb3c47bf78e
+
+
+    ### knowledge
+GET http://localhost:3001/api/knowledge/63773a79fcbfd67de6919422
+content-type: application/json 
+{
+  "userId": "636b76ea9daaabbcecf21442"
+}
+

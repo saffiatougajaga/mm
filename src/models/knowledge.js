@@ -1,51 +1,48 @@
 const mongoose = require('mongoose')
-const userSchema = new mongoose.Schema(
+//const { userInfo } = require('os')
+const knowledgeSchema = new mongoose.Schema(
   {
-    email: {
+    week: {
       type: String,
       required: true,
       unique: true,
       trim: true
     },
-    password: {
+    title: {
       type: String,
       required: true
     },
-    firstname: {
+    image: {
+      type: String,
+      trim: true,
+      
+    },
+    
+    content: {
       type: String,
       trim: true,
       maxlength: 25
     },
-    minit: {
-      type: String,
-      trim: true,
-      maxlength: 25
-    },
-    lastname: {
-      type: String,
-      trim: true,
-      maxlength: 25
-    },
-    role: {
+    description: {
       type: String,
       enum: ['Admin', 'User'], 
       default: 'User'
     },
-    knowledge: [
-      {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'knowledge'
-      }
-    ]
+   
+    user:[
+      {type: mongoose.Schema.Types.ObjectId,
+      ref: 'user'
+    }
+    ] 
   
-  },
+},
 
-
-  
+    
+      
   { timestamps: true }
 )
 
-userSchema.set('toJSON', {
+knowledgeSchema.set('toJSON', {
   transform: (document, returnedObject) => {
     returnedObject.id = returnedObject._id.toString()
     delete returnedObject._id
@@ -54,5 +51,6 @@ userSchema.set('toJSON', {
     delete returnedObject.password
   }
 })
-const User  = mongoose.model('user', userSchema)
-module.exports = User
+const knowledge  = mongoose.model('knowledge', knowledgeSchema)
+
+module.exports = knowledge
