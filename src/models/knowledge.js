@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-//const { userInfo } = require('os')
+
 const knowledgeSchema = new mongoose.Schema(
   {
     week: {

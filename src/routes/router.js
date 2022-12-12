@@ -4,7 +4,7 @@ const router = express.Router();
 
 
 
-const {createUser , getAllUsers , getOneUser , updateOne , deleteOne ,} = require ('../controllers/user');
+const {createUser , getAllUsers , getOneUser , updateOne , deleteOne } = require ('../controllers/user');
 const { createknowledge, getAllknowledge , getOneknowledge, updateOneknowledge, deleteOneknowledge} = require('../controllers/knowledge');
 
 
@@ -22,7 +22,7 @@ router.delete('/user/:id' , deleteOne);
 
 //knowledge route
 router.post('/knowledge' , createknowledge);
-router.get('/knowlrdge' , getAllknowledge);
+router.get('/knowledge' , getAllknowledge);
 router.get('/knowledge/:id' , getOneknowledge);
 router.put('/knowledge/:id', updateOneknowledge);
 router.delete('/knowledge/:id', deleteOneknowledge);

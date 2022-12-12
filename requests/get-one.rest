@@ -1,5 +1,4 @@
-
-    GET http://localhost:3001/api/user/6378e04310758eb3c47bf78e
+    GET http://localhost:3001/api/user/6396fe0e5d736b2ed43d8e34
 
 
     ### knowledge
@@ -8,4 +7,3 @@ content-type: application/json
 {
   "userId": "636b76ea9daaabbcecf21442"
 }
-

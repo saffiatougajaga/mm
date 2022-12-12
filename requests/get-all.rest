@@ -1,13 +1,2 @@
-GET http://localhost:3001/api/user
-content-type: application/json 
-
-
-
- 
-    ### knowledge
-GET http://localhost:3001/api/knowledge HTTP/1.1
-content-type: application/json 
-
-{
-  "userId": "637918bc09415b9f87bbb026"
-}
+GET http://localhost:3001/api/user/63948b4845cd8fe67c4bba09 
+Content-Type: application/json

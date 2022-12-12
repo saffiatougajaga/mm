@@ -2,12 +2,11 @@ POST http://localhost:3001/api/user HTTP/1.1
 content-type: application/json 
 
 {
-  "email": "saffieyaboe@gmail.com",
-  "password": "secret",
-  "firstname": "safie",
+  "email": "saffiegajaga@gmail.com",
+  "password": "not visible",
+  "firstname": "ssaffie",
   "minit": "",
-  "lastname": "yaboe"
-}
+  "lastname": "sillah"}
 
 ###
 POST http://localhost:3001/api/knowledge HTTP/1.1
@@ -17,6 +16,6 @@ content-type: application/json
 "week":"seven",
 "title":"knowledge",
 "image":"screening",
-"user":"634a5bdb441c0826a1b5e678"
+"user":"63949b7f0158222e31ec38ec"
 }
 

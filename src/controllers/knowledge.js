@@ -3,12 +3,14 @@ const user = require('../models/user')
 
 
 const createknowledge = async (req, res) => {
-    const content = req.body;
-    
- const knowledge = await knowledge.findById(content.userId);
+   const content = req.body;  
+ const user = await user.findById(content.userId);
 
     try {
     const knowledge = await knowledge.create({user: content.userId, ...content})
+
+   // console.log('checking where is here', knowledge)
+
     user.knowledge = user.knowledge.concat(knowledge._Id)
     await user.save();
      

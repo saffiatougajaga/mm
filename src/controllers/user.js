@@ -3,6 +3,7 @@ const User = require('../models/user');
 
 const createUser = async (req, res) => {
   const content = req.body;
+
   console.log(content);
   try {
     const user = await User.create({ ...content });
@@ -15,13 +16,13 @@ const createUser = async (req, res) => {
 
 // getting all the usere 
 
-const getAllUsers = async(req , res , next) =>{
+const getAllUsers = async(req , res ) =>{
 try {
-  const user = await User.find();
-  res.status(200).json({data: user})
+  const user = await User.find({});
+  res.status(201).json({data: users  })
 } catch (error) {
   next(error)
-  return res.status(500).json({message: error.mesage})
+  return res.status(500).end();
   
 }
 
@@ -70,6 +71,7 @@ const updateOne = async (req, res) => {
 
 const deleteOne = async (req, res) => {
   const id = req.params.id
+  
   try {
     const user = await User.findOneAndRemove({ _id: id });
     if (!user) {
